@@ -1,17 +1,17 @@
-$bgColor: #24292e;
-$text: #fff;
+// Общий импорт
+@import './base-style/css_reset.scss';
+@import './base-style/fonts.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+// Импорт блоков
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import './blocks/mainTitle.scss';
+@import './blocks/paragraph-block.scss';
+@import './blocks/brend-slider.scss';
+@import './blocks/header.scss';
+@import './blocks/tecnikal-slider.scss';
+@import './blocks/price-slider.scss';
+@import './blocks/oferta-area.scss';
+@import './blocks/footer.scss';
+@import './blocks/burger-menu.scss';
+@import './blocks/feed-back-form.scss';
+@import './blocks/call-order-form.scss';

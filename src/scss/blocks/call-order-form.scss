@@ -1,0 +1,126 @@
+$textColor: rgb(27, 28, 33);
+$linkColor: rgb(255, 62, 121);
+$formBorderColor: rgb(234, 234, 234);
+$formBorderColorFocuse: rgb(65, 246, 215);
+
+.call-order {
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  background-color: #fff;
+  .call-order__img {
+    margin: 24px 0px 0px 16px;
+  }
+  .call-order__form {
+    .call-order__button {
+      display: block;
+      margin-right: 16px;
+      margin-left: auto;
+    }
+
+    .call-order__text {
+      font-family: TT Lakes;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin: 16px 16px 23px 16px;
+    }
+    .call-order__text a {
+      text-decoration: none;
+      color: $linkColor;
+    }
+    .call-order__form-head {
+      color: $textColor;
+      font-family: TT Lakes;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      text-align: left;
+      background-image: url('/src/img/highlight (1).png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-left: 12px;
+      margin-top: 32px;
+    }
+    .call-order__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+      .call-order__phone-form {
+        margin: 0 16px 16px 16px;
+        border: 1px solid $formBorderColor;
+        border-radius: 8px;
+        min-height: 48px;
+        font-family: TT Lakes;
+        font-size: 5x;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+        padding: 12px 16px;
+        outline: none;
+        &:focus {
+          border-color: $formBorderColorFocuse;
+        }
+      }
+    }
+  }
+}
+
+// Стили для открытия бургер меню для мобилки
+
+@media (max-width: 767px) {
+  .call-order {
+    height: 100%;
+    width: 100%;
+  }
+  .call-order_show {
+    position: absolute;
+    z-index: 5;
+    overflow: scroll;
+  }
+
+  .scrollStop {
+    overflow: hidden;
+  }
+}
+.swiper-horizontal > .swiper2 .swiper-pagination-bullets,
+.swiper2 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  top: 170px;
+}
+
+// Стили для открытия бургер меню для планшета
+
+@media (min-width: 768px) {
+  .call-order {
+    height: 100%;
+    width: 320px;
+  }
+  .call-order_show {
+    position: absolute;
+    z-index: 5;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    position: relative;
+  }
+  .call-order_show {
+    top: 0;
+    right: 0;
+    max-width: 440px;
+  }
+  .call-order__img {
+    position: absolute;
+    left: -86px;
+    top: 6px;
+  }
+  .call-order__form-head {
+    height: 40px;
+  }
+}

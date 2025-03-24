@@ -1,0 +1,59 @@
+$colorText: rgb(27, 28, 33);
+
+.oferta-area__wrapper {
+  padding: 16px 16px 0px 16px;
+  margin-bottom: 55px;
+  .oferta-area__text {
+    color: $colorText;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    min-width: 288px;
+    max-width: 60%;
+    margin-right: auto;
+  }
+  .oferta-area__link {
+    text-decoration: none;
+    color: $colorText;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    display: block;
+    margin-top: 16px;
+    width: 200px;
+    .oferta-area__img {
+      margin-left: 9.5px;
+    }
+  }
+}
+
+// стили для планшета
+
+@media (min-width: 768px) {
+  .oferta-area__wrapper {
+    margin-left: 32px;
+    padding-left: 0;
+    .oferta-area__text {
+      max-width: 100%;
+      width: 440px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .oferta-area__wrapper {
+    max-width: 1032px;
+    margin-left: auto;
+    margin-right: auto;
+    .oferta-area__link {
+      width: 500px;
+    }
+  }
+}

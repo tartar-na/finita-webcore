@@ -1,0 +1,135 @@
+$bgColor: rgb(248, 248, 248);
+$textColor: rgb(126, 126, 130);
+$blockDivideColor: rgb(217, 255, 245);
+$sliderTextColor: rgb(27, 28, 33);
+
+.price-slider__heading {
+  color: $textColor;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  text-transform: uppercase;
+  border-top: 1px solid $blockDivideColor;
+  background: linear-gradient(90deg, rgb(248, 248, 248), rgb(255, 255, 255) 98.614%);
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.price-slider__text {
+  padding: 16px 0px 0px 16px;
+  .price-slider__text-1 {
+    margin-bottom: 16px;
+  }
+  .price-slider__text-1 {
+    width: 210px;
+  }
+  .price-slider__text-1 {
+  }
+  .price-slider__text-1-heading,
+  .price-slider__text-2-heading,
+  .price-slider__text-3-heading {
+    color: rgb(126, 126, 130);
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 0.72;
+    margin-bottom: 4px;
+  }
+  .price-slider__text-1,
+  .price-slider__text-2,
+  .price-slider__text-3 {
+    color: rgb(27, 28, 33);
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper3 {
+    height: 225px;
+  }
+  .swiper-slide3 {
+    height: 200px;
+  }
+  .swiper-slide3 img {
+    width: 119px;
+    height: 32px;
+    top: 151px;
+    left: 104px;
+  }
+  .price__without-mobile {
+    display: none;
+  }
+}
+
+// стили для планшета
+@media (min-width: 768px) {
+  .swiper3 {
+    display: none;
+  }
+  .price-slider {
+  }
+  .price__without-mobile {
+    height: 388.8px;
+    max-width: 1032px;
+    background: rgb(255, 255, 255);
+    margin: 32px auto;
+    color: rgb(27, 28, 33);
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    background-color: rgb(248, 248, 248);
+    .price__border-radius {
+      // display: flex;
+      border: 1px solid #fff;
+      border-radius: 6px;
+    }
+
+    .price__without-mobile-area_white-bg {
+      background: #fff;
+    }
+    .price__without-mobile-area {
+      height: 64.8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 16px;
+      border-bottom: 1px solid rgb(234, 234, 234);
+
+      .price__text-service {
+        width: 348px;
+      }
+      .price__text-price {
+        width: 74px;
+      }
+      .price__time {
+        width: 84px;
+      }
+      .price__button {
+        width: 119px;
+        height: 32px;
+        margin-right: 16px;
+      }
+    }
+    .price__without-mobile-area:last-child {
+      border: none;
+    }
+    .price__without-mobile-area:first-child {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+// Стили для мобилки
+$blockDivideColor: rgb(217, 255, 245);
+$bgWhite: #fff;
+.head {
+  border-bottom: 1px solid $blockDivideColor;
+  .head__imgs {
+    display: flex;
+    padding: 19px 16px;
+    align-items: center;
+    .head__img {
+      height: 40px;
+    }
+    .head__burger-link {
+      .head__img_burger {
+        margin-right: 17px;
+      }
+    }
+    .head__img_group {
+      width: 97px;
+      height: 51px;
+      margin-right: 17px;
+    }
+    .head__img_divider-1,
+    .head__img_call,
+    .head__img_chat,
+    .head__img_profile {
+      display: none;
+    }
+    .head__img_repair {
+      margin-left: auto;
+      margin-right: 16px;
+    }
+  }
+}
+
+// Стили для планшетов
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .head {
+    .head__imgs {
+      .head__img_group {
+        width: 97px;
+        height: 51px;
+        margin-right: 17px;
+      }
+      .head__img_divider-1,
+      .head__img_call,
+      .head__img_chat,
+      .head__img_profile,
+      .head__img_repair {
+        display: block;
+        margin-right: 17px;
+      }
+      .head__img_repair {
+        margin: 0 17px;
+      }
+      .head__img_call {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper-for-desktop {
+    display: flex;
+    justify-content: center;
+  }
+  .head {
+    background-color: $bgWhite;
+    .head__imgs {
+      display: none;
+    }
+  }
+  .opacity-for-desktop {
+    height: 100%;
+    width: 100%;
+    background: $bgWhite;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.96;
+  }
+}

@@ -1,0 +1,75 @@
+$blockDivideColor: rgb(217, 255, 245);
+$bgColor: rgb(126, 126, 130);
+
+.footer {
+  .footer__wrapper {
+    border-top: solid 1px $blockDivideColor;
+    color: $bgColor;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    opacity: 0.72;
+    padding: 17px 4px 17px 4px;
+
+    .footer__text-1 {
+      width: 218px;
+      height: 32px;
+      margin: 0 auto 16px auto;
+    }
+    .footer__text-2 {
+      width: 214px;
+      height: 16px;
+      margin: 0 auto 16px auto;
+    }
+    .footer__text-3 {
+      width: 312px;
+      height: 32px;
+      margin: 0 auto 16px auto;
+    }
+  }
+}
+
+// стили для планшета
+@media (min-width: 768px) {
+  .footer {
+    .footer__wrapper {
+      display: flex;
+      justify-content: space-between;
+      .footer__text-1,
+      .footer__text-2,
+      .footer__text-3 {
+        margin: 0px;
+      }
+      .footer__text-1 {
+        margin-left: 24px;
+        text-align: left;
+      }
+      .footer__text-2 {
+      }
+      .footer__text-3 {
+        text-align: right;
+        margin-right: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    .footer__wrapper {
+      .footer__text-1,
+      .footer__text-2,
+      .footer__text-3 {
+      }
+      .footer__text-1 {
+        margin-left: 31px;
+      }
+      .footer__text-3 {
+        margin-right: 33px;
+      }
+    }
+  }
+}
